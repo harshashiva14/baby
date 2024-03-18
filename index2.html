@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Akhil</strong>
+                        <p>
+                            I know u don't like if I ask sorry means But I am feeling bad about my action
+                            I should not believe the words of her but I did. If I ask you thousand times 
+                            sorry also I can't digest my action. I am soo sorryyyy!!!. accept my apology 
+                            for myself.Hereafter I won't repeat like this.U not take this as serious issue 
+                            but I know u feel bad inside soo for myself please apologies                   
+                             mee!!
+
+                                                           -by YOUR PANDA
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
